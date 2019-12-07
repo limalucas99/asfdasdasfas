@@ -1,0 +1,36 @@
+input
+{
+    border: 2px solid blue;
+  border-radius: 8px;
+}
+
+
+//Formulario
+
+.navbar-nav {
+
+margin-left: 14px;
+}
+
+.navbar-brand{
+    background-color: #ffcc99;
+    min-width: 9rem; /* não pode ter uma largura menor que essa */
+    text-align: right;
+    color: white; /*tirar navbar-light e bg-light para o bootstrap não sobrescrever meu CSS*/
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;}
+
+
+@media screen and (max-width: 500px) and (min-width: 0px)
+{
+    body{
+        margin: 0px;
+    }
+    #JQform{
+        margin: 0px;
+        width: 100%;
+    }
+}

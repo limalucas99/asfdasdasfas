@@ -1,0 +1,153 @@
+﻿
+@{
+    ViewData["Title"] = "Whybuy";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+   
+
+    <!--linkando com arquivo CSS -->
+    <link rel="stylesheet" href="~/css/estilo-whybuy.css">
+
+    <!--pesquisar como colocar um ícone no título da página -->
+    <link rel="icon" href="imagens/icone_dan/apple-icon.png" type="image/x-icon">
+    <title>FrutasJá - Por que comprar aqui?</title>
+</head>
+<body id="home">
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg fixed-top" read-only="true">
+        <a asp-action="Index" asp-controller="Home" class="navbar-brand col-3">FrutasJá</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            <span class="sr-only"></span> &#9776;
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a asp-action="Frutas" asp-controller="Home" class="nav-link">
+                        Frutas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Verduras" asp-controller="Home" class="nav-link">
+                        Verduras
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Legumes" asp-controller="Home" class="nav-link">
+                        Legumes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Whybuy" asp-controller="Home" class="nav-link">Por que comprar conosco?</a>
+                </li>
+                <li class="nav-item">
+                    <input type="search" maxlength="30" class="mt-1">
+                </li>
+                <li class="nav-item">
+                    <i class="nav-link fas fa-search mt-1 busca"></i>
+                </li>
+                <li class="nav-item cadastro">
+                    <a asp-action="Index" asp-controller="Home" class="nav-link log-in mt-0">Login | Cadastre-se</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--Fim menu-->
+    <!-- div apresentação-->
+    <div class="container text-center mt-5 titulo">
+
+        <p>Confira abaixo os motivos que com certeza farão você comprar conosco</p>
+
+    </div>
+
+    <!-- fim div apresentação -->
+    <!-- imagens -->
+
+    <div class="container mt-5 text-center imagens ">
+
+        <div class="container">
+            <h6>Frutas sempre frescas</h6>
+            <figure class="fotos">
+                <img src="~/imagens/motivo1.jpg" />
+                <figcaption>
+                    <h3>Trabalhamos com os melhores produtores de frutas do País, para sempre garantirmos que somente as melhores frutas cheguem à sua mesa.</h3>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="container">
+            <h6>Entregas em horas</h6>
+            <figure class="fotos">
+                <img src="~/imagens/motivo2.jpg" />
+                <figcaption>
+                    <h3>Com um grande número de colaboradores, nossa entrega está entre as mais rápidas do mercado, sem desperdício do seu tempo, em poucas horas suas frutas já estarão ao seu dispor em sua casa.</h3>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="container">
+            <h6>Frutas livres de agrotóxicos</h6>
+            <figure class="fotos">
+                <img src="~/imagens/motivo3.jpg" />
+                <figcaption>
+                    <h3>Como zelamos pela sua saúde, trabalhamos somente com fornecedores de produtos orgânicos, livre dos malfeitores agrotóxicos.</h3>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="container">
+            <h6>O melhor preço do mercado</h6>
+            <figure class="fotos">
+                <img src="~/imagens/motivo4.jpg" />
+                <figcaption>
+                    <h3>Como conectamos você, consumidor final, ao produtor, eliminamos o maior número possível de intermediários na cadeia de produção para conseguir garantir para o cliente o melhor preço.</h3>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="container">
+            <h6>Entrega automatizada</h6>
+            <figure class="fotos">
+                <img src="~/imagens/motivo5.jpg" />
+                <figcaption>
+                    <h3>Para facilitar sua rotina, nossas entregas podem ser programadas semanalmente, otimizando seu tempo.</h3>
+                </figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+    <!-- Fim imagens -->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <p class="logo-text">FrutasJá</p>
+                </div>
+                <div class="col-md-7">
+                    <p>Idealizada e criada por alunos do melhor professor de WEB da FATEC, a FrutasJá é uma empresa que veio para agregar saúde no seu dia a dia, por meio da possibilidade de o cliente ter o melhor dos produtores de frutas a um preço inferior do que se encontra no mercado, e com a praticidade do delivery, em poucos instantes suas frutas são entregues com segurança e agilidade.</p>
+                </div>
+                <div class="col-md-3">
+                    <p>&copy; 2019 FrutasJá - Todos os direitos reservados<p>
+                        <a href="mailto:lucaslim.lux@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/lucas.liima99" target="_blank"><i class="fab fa-facebook-square ml-2"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-liima/" target="_blank"><i class="fab fa-linkedin ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim Footer-->
+
+
+
+
+</body>
+</html>
+

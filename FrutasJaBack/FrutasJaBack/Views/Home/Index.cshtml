@@ -1,0 +1,209 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    
+
+    <!--linkando com arquivo CSS -->
+    <link rel="stylesheet" href="~/css/estilo-index.css">
+
+    <!--pesquisar como colocar um ícone no título da página -->
+    <link rel="icon" href="imagens/icone_dan/apple-icon.png" type="image/x-icon">
+    <title>FrutasJá - Home</title>
+</head>
+<body id="home">
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg fixed-top" read-only="true">
+        <a asp-action="Index" asp-controller="Home" class="navbar-brand col-3">FrutasJá</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            <span class="sr-only"></span> &#9776;
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a asp-action="Frutas" asp-controller="Home" class="nav-link">
+                        Frutas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Verduras" asp-controller="Home" class="nav-link">
+                        Verduras
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Legumes" asp-controller="Home" class="nav-link">
+                        Legumes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Whybuy" asp-controller="Home" class="nav-link">Por que comprar conosco?</a>
+                </li>
+                <li class="nav-item">
+                    <input type="search" maxlength="30" class="mt-1">
+                </li>
+                <li class="nav-item">
+                    <i class="nav-link fas fa-search mt-1 busca"></i>
+                </li>
+                <li class="nav-item cadastro">
+                    <a asp-action="Login" asp-controller="Home" class="nav-link log-in mt-0">Login | Cadastre-se</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--Fim menu-->
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid index">
+        <div class="container text-center element-animate" data-animate-effect="zoomIn">
+            <!-- text-center  = centraliza o botão no meio do jumbo-->
+            <p class="display-4">Encontre as melhores frutas</p>
+            <p class="lead">Frutas de qualidade, com preços que cabem no seu bolso.</p>
+            <a href="#produtos" class="btn btn-outline-light btn-lg mt-5 barra-animada">Conheça nossos produtos</a>
+        </div>
+    </div>
+    <!--fim Jumbotron-->
+    <!--Div Produtos -->
+    <div class="produtos mt-5 text-center h1" id="produtos">
+        <h2 class="container h3">Produtos em destaque</h2>
+    </div>
+    <!-- Fim div produtos -->
+    <!-- Cards -->
+
+
+
+
+
+    <section class="section-cards mt-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/melancia.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Melancia Vermelha</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>25,90<span class="period"> /KG</span></h3>
+                        <a href="frutas.html"></a>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/tangerina.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mexerica Murcott</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>14,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/manga.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Manga Palmer</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>20,00<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/brocolis.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Brócolis</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>19,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/couve-flor.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Couve-flor</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>21,50<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/alcachofra.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Alcachofra</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>63,50<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/cenoura.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Cenoura</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>17,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/milho.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Milho</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>0,50<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/batata.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Batata</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>11,50<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- section-cards-->
+    <!-- Div detalhes -->
+    <div id="detalhes">
+        clique para mais detalhes
+    </div>
+    <!-- Fim Div detalhes -->
+    <!-- Div Para ver mais -->
+
+    <div class="text-center" id="para-ver-mais">
+        Para conhecer mais produtos selecione alguma categoria no menu.
+    </div>
+
+    <!-- fim Div Para ver mais -->
+    <!-- Section-Quote-->
+    <section class="section-quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <!--offset é usado para pular colunas na grid-->
+                    <blockquote class="blockquote">
+                        <p class="mb-0">As frutas, legumes e verduras tem papel fundamental para a prevenção de doenças crônicas e auxiliar na imunidade do nosso organismo contra as infecções, além de contribuir para manter o peso ideal do nosso corpo. Possuem diversos tipos de vitaminas, minerais e fibras essenciais a boa manutenção da nossa saúde. Alguns estudos realizados relatam a importância do consumo desses alimentos para a nossa saúde prevenindo muitas doenças como câncer, hipertensão, acidente vascular cerebral, osteoporose, etc. Esses alimentos também são protetores contra as doenças pulmonares como asma e bronquite.</p>
+                        <footer class="blockquote-footer">
+                            Fátima Mendes, Nutricionista,<cite title="Título da fonte">
+                                2010
+                            </cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Section-Quote-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <p class="logo-text">FrutasJá</p>
+                </div>
+                <div class="col-md-7">
+                    <p>Idealizada e criada por alunos do melhor professor de WEB da FATEC, a FrutasJá é uma empresa que veio para agregar saúde no seu dia a dia, por meio da possibilidade de o cliente ter o melhor dos produtores de frutas a um preço inferior do que se encontra no mercado, e com a praticidade do delivery, em poucos instantes suas frutas são entregues com segurança e agilidade.</p>
+                </div>
+                <div class="col-md-3">
+                    <p>&copy; 2019 FrutasJá - Todos os direitos reservados<p>
+                        <a href="mailto:lucaslim.lux@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/lucas.liima99" target="_blank"><i class="fab fa-facebook-square ml-2"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-liima/" target="_blank"><i class="fab fa-linkedin ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim Footer-->
+
+
+
+
+
+
+</body>
+</html>

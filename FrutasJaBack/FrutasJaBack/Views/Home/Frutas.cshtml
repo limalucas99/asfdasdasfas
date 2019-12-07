@@ -1,0 +1,269 @@
+﻿
+@{
+    ViewData["Title"] = "Frutas";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+   
+
+    <!--linkando com arquivo CSS -->
+    <link rel="stylesheet" href="~/css/estilo-frutas.css">
+
+    
+
+
+    <!--linkando com jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+    <!--pesquisar como colocar um ícone no título da página -->
+    <link rel="icon" href="imagens/icone_dan/apple-icon.png" type="image/x-icon">
+    <title>FrutasJá - Frutas</title>
+</head>
+<body id="home">
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg fixed-top" read-only="true">
+        <a  class="navbar-brand col-3" asp-action="Index" asp-controller="Home">FrutasJá</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            <span class="sr-only"></span> &#9776;
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a asp-action="Frutas" asp-controller="Home" class="nav-link">
+                        Frutas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Verduras" asp-controller="Home" class="nav-link">
+                        Verduras
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Legumes" asp-controller="Home" class="nav-link">
+                        Legumes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="Whybuy" asp-controller="Home" class="nav-link">Por que comprar conosco?</a>
+                </li>
+                <li class="nav-item">
+                    <input type="search" maxlength="30" class="mt-1">
+                </li>
+                <li class="nav-item">
+                    <i class="nav-link fas fa-search mt-1 busca"></i>
+                </li>
+                <li class="nav-item cadastro">
+                    <a asp-action="Login" asp-controller="Home" class="nav-link log-in mt-0">Login | Cadastre-se</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--Fim menu-->
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid frutas">
+        <div class="container text-center element-animate">
+            <!-- text-center  = centraliza o botão no meio do jumbo-->
+            <p class="display-4 mt-5">Experimente nossos produtos</p>
+            <p class="lead mt-3">Sinta o irresistível sabor das nossas frutas.</p>
+            <a href="#produtos" class="btn btn-outline-light btn-lg mt-5 barra-animada">Descubra</a>
+        </div>
+    </div>
+    <!--fim Jumbotron-->
+    <!--Div Produtos -->
+    <div class="produtos mt-5 text-center h1" id="produtos">
+        <h2 class="container h3">Produtos em destaque</h2>
+    </div>
+    <!-- Fim div produtos -->
+    <!-- Cards -->
+
+
+
+
+
+    <section class="section-cards mt-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="card  col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/laranjas.jpg" class="card-img-top">
+                    <a href="produto-detalhe.html">
+                        <div class="card-body">
+                            <h5 class="card-title">Laranja Bahia</h5>
+                            <h3 class="display-2"><span class="currency">R$</span>19,90<span class="period"> /KG</span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/mamao.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mamão Papaia</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>12,99<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/maca.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Maça Fuji</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>15,00<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/melancia.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Melancia Vermelha</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>25,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/tangerina.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mexerica Murcott</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>14,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/manga.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Manga Palmer</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>20,00<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/abacaxi.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Abacaxi Pérola</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>29,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/pera.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pera Williams</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>6,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/melao.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Melão Dino</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>21,50<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/pessego.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pêssego Fresco</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>29,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/banana.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana Ouro</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>99,99<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/uva.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Uva Vermelha</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>17,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/maracuja.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Maracujá Amarelo</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>19,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/abacate.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Abacate Orgânico</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>21,50<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/lichia.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lichia Emperor</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>63,50<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/amora.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Amora Silvestre</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>400,00<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+                <div class="card col-md-5 col-lg-4 col-xl-3">
+                    <img src="~/imagens/cards-index/kiwi.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Kiwi Gold</h5>
+                        <h3 class="display-2"><span class="currency">R$</span>79,90<span class="period"> /KG</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- section-cards-->
+    <!-- Div detalhes -->
+    <div id="detalhes">
+        clique para mais detalhes
+    </div>
+    <!-- Fim Div detalhes -->
+    <!-- Section-Quote-->
+    <section class="section-quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <!--offset é usado para pular colunas na grid-->
+                    <blockquote class="blockquote">
+                        <p class="mb-0">As frutas são ricas em vitaminas, minerais, antioxidantes, fibras e água. Em geral melhoram o funcionamento intestinal, sistema imunológico, previnem câncer, doenças cardiovasculares e degenerativas. A ingestão média indicada para os brasileiros é de 3 a 5 porções por dia.</p>
+                        <footer class="blockquote-footer">
+                            Juliana Monteiro Senra, Nutricionista,<cite title="Título da fonte">
+                                2015
+                            </cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Section-Quote-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <p class="logo-text">FrutasJá</p>
+                </div>
+                <div class="col-md-7">
+                    <p>Idealizada e criada por alunos do melhor professor de WEB da FATEC, a FrutasJá é uma empresa que veio para agregar saúde no seu dia a dia, por meio da possibilidade de o cliente ter o melhor dos produtores de frutas a um preço inferior do que se encontra no mercado, e com a praticidade do delivery, em poucos instantes suas frutas são entregues com segurança e agilidade.</p>
+                </div>
+                <div class="col-md-3">
+                    <p>&copy; 2019 FrutasJá - Todos os direitos reservados<p>
+                        <a href="mailto:lucaslim.lux@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/lucas.liima99" target="_blank"><i class="fab fa-facebook-square ml-2"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-liima/" target="_blank"><i class="fab fa-linkedin ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim Footer-->
+
+
+
+
+</body>
+
+</html>
+

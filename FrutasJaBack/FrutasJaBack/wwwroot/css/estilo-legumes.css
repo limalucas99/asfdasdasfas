@@ -1,0 +1,328 @@
+/* Estilização da NAV */
+
+.navbar-nav {
+
+margin-left: 14px;
+}
+
+
+.ativa{
+    color: black !important;
+}
+
+
+.nav-link{
+    display: block;
+    text-transform: uppercase;
+    color: #800080;
+    font-weight: 600;
+    /*Formatar aqui também*/
+}
+
+.nav-link:hover{
+   color: #4d004d;  
+}
+
+input{
+  width: 210px;
+  border-radius: 10px;
+  height: 25px;
+  margin-top: 7px;
+  margin-left: 15px;
+  color: rgba(0,0,0,.7);
+}
+
+@media screen and (max-width: 992px){
+    .navbar-nav{
+        margin-left: 2rem;
+        text-align: center;
+    }
+    
+    .nav-link{
+        border-bottom:  1px solid #800080;
+    }
+}
+
+
+
+.navbar{
+    padding: 0; /* deixa a navbar sem espaços em branco em volta dela */
+    background-color: white;
+    box-shadow: 0 10px 12px rgba(0,0,0,.3);
+}
+
+
+.navbar-brand{
+    background-color: #800080;
+    min-width: 9rem; /* não pode ter uma largura menor que essa */
+    text-align: right;
+    color: white; /*tirar navbar-light e bg-light para o bootstrap não sobrescrever meu CSS*/
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /*Usar f12 no google chrome para saber o que o bootstrap está sobrescrevendo quando algo não funcionar*/
+}
+
+.navbar-brand:hover{
+   color: #ffe6ff;
+}
+
+/* Fim estilização da NAV */
+
+/* Jumbotron */
+
+.frutas{
+    background: url(/imagens/jumbo-legumes.jpg);
+}
+
+.jumbotron{
+    background-size: cover; /* faz a imagem cobrir o background de maneira mais correta*/
+    background-position: right center; /*centraliza a imagem*/
+    padding: 10rem 2rem; /* aumentando o preenchimento da imagem(fazendo ela ocupar mais espaço) */ 
+    align-items: center;
+    margin-bottom: 0; /* Para a div subir*/
+    height: 90vh;  
+}
+
+
+.jumbotron .lead{
+    color: white;
+    text-align: center;
+   text-shadow: 2px 2px 1px rgba(0,0,0,.9);
+    font-size: 1.6rem;
+}
+
+.display-4{
+    font-size: 3.1rem;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.9);
+}
+
+.btn{
+   background-color: inherit;
+   outline-color: red;
+   color: rgba(255, 255, 255,.7);
+   border: 1px solid rgba(255,255,255,.3);
+}
+
+.btn:hover{
+   background-color: inherit;
+   border: 1px solid rgba(255,255,255,.5);
+   color: rgba(255,255,255,1);
+}
+
+.navbar .fas{
+    color:#800080;
+    margin: 11px 4px 3px 10px;
+}
+
+.fas:hover{
+    color:#4d004d;
+    cursor: pointer;
+}
+
+.fa-user:hover{
+    cursor: default !important;
+    color: #800080 !important;
+}
+
+.navbar .fa-user{
+    border-left: 1px solid #660066;
+    padding-left: 15px;
+}
+
+/* fim Jumbotron*/
+
+/* div produtos */
+
+.produtos{
+    height:100px;
+    background-color: #4d004d;
+    padding-top: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.9);
+}
+/* fim div produtos */
+
+/* Cards */
+
+.card-img-top{
+    position: relative;
+    top: -35px;
+}
+
+.card-body{
+   position: relative;
+   top: -25px;
+}
+
+.card{
+  border: 0;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  height: 360px;
+  margin-left: 90px;
+  margin-bottom: 90px;
+}
+
+.card:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+
+
+.display-2 {
+  font-size: 4rem;
+  letter-spacing: -.3rem;
+}
+
+.currency {
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 100;
+    top: -27px;
+    letter-spacing: 0px;
+}
+.period {
+    font-size: 1rem;
+    color: lighten;
+    letter-spacing: 1px;
+}
+
+
+body{
+    background-color: #f2efff;
+}
+
+#detalhes{
+  display:none;
+  height: 12px;
+  color: white;
+  background-color: none;
+  position: absolute;
+  font-size: .7rem;
+}
+
+.section-quote{
+    background-color: #4d004d;
+    padding: 12px 2px;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+}
+
+.section-quote footer{
+    color: rgba(255,255,255,0.5);
+}
+
+.footer{
+    background-color: #ffe6ff;
+    padding: 50px 0 250px;
+    color: #454e51;
+}
+
+.section-cards a{
+    color: black;
+}
+
+.section-cards a:hover{
+    text-decoration: none;
+}
+
+.section-cards img{
+    width: 284px;
+    height: 180px;
+}
+
+.element-animate{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar-toggler{
+    color: purple;
+}
+
+.navbar-toggler:focus{ 
+    outline-color: white; /*Tirar a merda da cor que fica no hamburguer menu qdo clicam nele*/
+}
+
+@media screen and (max-width: 991px) and (min-width: 766px)
+{
+  .section-cards img{
+    width: 300px;
+    height: 250px;
+   }
+    
+  .card{
+  border: 0;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  height: 450px;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-bottom: 90px;
+  }
+    
+    .card:hover{
+    transform: scale(1);
+    cursor: pointer;
+    }
+    
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px)
+{
+    
+  .section-cards img{
+    width: 319px;
+    height: 250px;
+   }
+
+  .card{
+  border: 0;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  height: 450px;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 90px;
+  }
+    
+}
+
+@media screen and (max-width: 764px)
+{
+   .section-cards img{
+    width: 389px;
+    height: 250px;
+   }
+    
+    .card{
+  border: 0;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  height: 450px;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 90px;
+  }
+    
+     .card:hover{
+    transform: scale(1);
+    cursor: pointer;
+    }
+    
+}
+
+
+
